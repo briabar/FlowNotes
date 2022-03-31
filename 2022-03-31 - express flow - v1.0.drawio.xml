@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" modified="2022-03-31T20:35:40.818Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36" etag="LRPNmyiUgjPUeXO2oeH5" version="17.3.0" type="google">
+  <diagram id="ozHE4Hlg6qgGcB8b7SZ7" name="Page-1">
+    <mxGraphModel dx="2050" dy="2169" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="xhEjqI0Dl-hZpxnw0kOA-4" value="/app.js" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="300" y="440" width="880" height="810" as="geometry" />
+        </mxCell>
+        <mxCell id="xhEjqI0Dl-hZpxnw0kOA-5" value="var createError = requiire(&#39;http-errors&#39;); import create-errors module and instantiate createError object." style="text;strokeColor=#666666;fillColor=#f5f5f5;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fontColor=#333333;fontStyle=0;fontSize=14;" vertex="1" parent="xhEjqI0Dl-hZpxnw0kOA-4">
+          <mxGeometry y="30" width="880" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="xhEjqI0Dl-hZpxnw0kOA-6" value="var express = require(&#39;express&#39;); //import express module from node_modules/express" style="text;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fontStyle=0;fontSize=14;" vertex="1" parent="xhEjqI0Dl-hZpxnw0kOA-4">
+          <mxGeometry y="60" width="880" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="xhEjqI0Dl-hZpxnw0kOA-7" value="var path = require(&#39;path&#39;); //import paths module as path" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fontStyle=0;fontSize=14;" vertex="1" parent="xhEjqI0Dl-hZpxnw0kOA-4">
+          <mxGeometry y="90" width="880" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="xhEjqI0Dl-hZpxnw0kOA-21" value="var cookieParser = require(&#39;cookie-parser&#39;); // import cookie parser module as cookieParser" style="text;strokeColor=#666666;fillColor=#f5f5f5;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fontColor=#333333;fontStyle=0;fontSize=14;" vertex="1" parent="xhEjqI0Dl-hZpxnw0kOA-4">
+          <mxGeometry y="120" width="880" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="xhEjqI0Dl-hZpxnw0kOA-22" value="var logger = require(&#39;morgan&#39;); // import module morgan, which is a simple app to log http requests in apache &#xa;                                                  //combined format to access.log" style="text;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fontStyle=0;fontSize=14;" vertex="1" parent="xhEjqI0Dl-hZpxnw0kOA-4">
+          <mxGeometry y="150" width="880" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="xhEjqI0Dl-hZpxnw0kOA-23" value="var stuffRouter = require(&#39;.routes/stuff&#39;); // import routes from a file in /routes" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fontStyle=0;fontSize=14;" vertex="1" parent="xhEjqI0Dl-hZpxnw0kOA-4">
+          <mxGeometry y="180" width="880" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="xhEjqI0Dl-hZpxnw0kOA-49" value="var app = express(); // create an express application, imported from var express = require(&#39;express&#39;)" style="text;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;fontStyle=0;fontSize=14;" vertex="1" parent="xhEjqI0Dl-hZpxnw0kOA-4">
+          <mxGeometry y="210" width="880" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="xhEjqI0Dl-hZpxnw0kOA-50" value="app.set(&#39;views&#39;, path.join(__dirname, &#39;views&#39;));  //set&#39;s up the views" style="text;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fontStyle=0;fontSize=14;" vertex="1" parent="xhEjqI0Dl-hZpxnw0kOA-4">
+          <mxGeometry y="240" width="880" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="xhEjqI0Dl-hZpxnw0kOA-51" value="app.set(&#39;view engine&#39;, &#39;ejs&#39;);  //set ejs as the view manager" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fontStyle=0;fontSize=14;" vertex="1" parent="xhEjqI0Dl-hZpxnw0kOA-4">
+          <mxGeometry y="270" width="880" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="xhEjqI0Dl-hZpxnw0kOA-52" value="app.use(logger(&#39;dev&#39;));     //set&#39;s up morgan logger to use one of 5 predefined logging modes, this one is &#39;dev&#39;" style="text;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;fontStyle=0;fontSize=14;" vertex="1" parent="xhEjqI0Dl-hZpxnw0kOA-4">
+          <mxGeometry y="300" width="880" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="xhEjqI0Dl-hZpxnw0kOA-57" value="app.use(express.json());        //parses incoming JSON requests and puts the parsed data in req.body." style="text;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=0;fontSize=14;" vertex="1" parent="xhEjqI0Dl-hZpxnw0kOA-4">
+          <mxGeometry y="330" width="880" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="xhEjqI0Dl-hZpxnw0kOA-58" value="app.use(express.urlencoded({ extended: false }));  //parses incoming requests with urlencoded payloads and is based on body-parser." style="text;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=0;fontSize=14;" vertex="1" parent="xhEjqI0Dl-hZpxnw0kOA-4">
+          <mxGeometry y="360" width="880" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="xhEjqI0Dl-hZpxnw0kOA-59" value="app.use(logger(&#39;dev&#39;));     //set&#39;s up morgan logger to use one of 5 predefined logging modes, this one is &#39;dev&#39;" style="text;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;fontStyle=0;fontSize=14;" vertex="1" parent="xhEjqI0Dl-hZpxnw0kOA-4">
+          <mxGeometry y="390" width="880" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="xhEjqI0Dl-hZpxnw0kOA-60" value="app.use(cookieParser());  //add&#39;s the cookieParser as middle ware." style="text;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=0;fontSize=14;" vertex="1" parent="xhEjqI0Dl-hZpxnw0kOA-4">
+          <mxGeometry y="420" width="880" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="xhEjqI0Dl-hZpxnw0kOA-61" value="app.use(express.static(path.join(__dirname, &#39;public&#39;)));   //serve all files from &#39;public&#39; and make them accessible at &lt;server&gt;/&lt;dirnam&gt; " style="text;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=0;fontSize=14;" vertex="1" parent="xhEjqI0Dl-hZpxnw0kOA-4">
+          <mxGeometry y="450" width="880" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="xhEjqI0Dl-hZpxnw0kOA-63" value="app.use(methodOverride(&#39;_method&#39;));   //sets up override to convert HTTP methods to DELETE and PUT, (&#39;_method&#39;) uses &#xa;                                                              // query value override method" style="text;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;fontStyle=0;fontSize=14;" vertex="1" parent="xhEjqI0Dl-hZpxnw0kOA-4">
+          <mxGeometry y="480" width="880" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="xhEjqI0Dl-hZpxnw0kOA-64" value="app.use(&#39;/stuff&#39;, stuffRouter);   //Send traffic from &#39;/stuff&#39; to stuffRouter" style="text;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=0;fontSize=14;" vertex="1" parent="xhEjqI0Dl-hZpxnw0kOA-4">
+          <mxGeometry y="530" width="880" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="xhEjqI0Dl-hZpxnw0kOA-65" value="app.use(function(req, res, next) {     //if none of the routes catch send the browser to this 404 error.&#xa;  next(createError(404));&#xa;});" style="text;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=0;fontSize=14;" vertex="1" parent="xhEjqI0Dl-hZpxnw0kOA-4">
+          <mxGeometry y="560" width="880" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="xhEjqI0Dl-hZpxnw0kOA-66" value="app.use(function(err, req, res, next) {&#xa;  // set locals, only providing error in development                               // if there is an error forward the browser to the error message&#xa;  res.locals.message = err.message;                     &#xa;  res.locals.error = req.app.get(&#39;env&#39;) === &#39;development&#39; ? err : {};&#xa;  // render the error page&#xa;  res.status(err.status || 500);&#xa;  res.render(&#39;error&#39;);&#xa;});" style="text;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;fontStyle=0;fontSize=14;" vertex="1" parent="xhEjqI0Dl-hZpxnw0kOA-4">
+          <mxGeometry y="630" width="880" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="xhEjqI0Dl-hZpxnw0kOA-67" value="module.exports = app;                   //export our app to allow other parts of the code access" style="text;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=0;fontSize=14;" vertex="1" parent="xhEjqI0Dl-hZpxnw0kOA-4">
+          <mxGeometry y="780" width="880" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="xhEjqI0Dl-hZpxnw0kOA-8" value="www/bin" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="-10" y="-80" width="540" height="490" as="geometry" />
+        </mxCell>
+        <mxCell id="xhEjqI0Dl-hZpxnw0kOA-9" value="const app = require(&#39;../app&#39;); //import app.js" style="text;strokeColor=#666666;fillColor=#f5f5f5;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fontColor=#333333;fontStyle=0;fontSize=14;" vertex="1" parent="xhEjqI0Dl-hZpxnw0kOA-8">
+          <mxGeometry y="30" width="540" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="xhEjqI0Dl-hZpxnw0kOA-10" value="var debug = require(&#39;debug&#39;)(&#39;figureourexpress:server&#39;); // import debug module" style="text;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fontStyle=0;fontSize=14;" vertex="1" parent="xhEjqI0Dl-hZpxnw0kOA-8">
+          <mxGeometry y="60" width="540" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="xhEjqI0Dl-hZpxnw0kOA-11" value="var http = require(&#39;http&#39;);  //import http module, used to create server&#xa;&#xa;&#xa;&#xa;" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fontStyle=0;fontSize=14;" vertex="1" parent="xhEjqI0Dl-hZpxnw0kOA-8">
+          <mxGeometry y="90" width="540" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="xhEjqI0Dl-hZpxnw0kOA-13" value="var port = normalizePort(process.end.PORT || &#39;3000&#39;);  //if there is an environment &#xa;                                                                                       //port use that otherwise use &#xa;                                                                                       //port 3000 and assign it to &#xa;                                                                                       //variable port calls &#xa;                                                                                       //normalizePort on line 36&#xa;" style="text;strokeColor=#666666;fillColor=#f5f5f5;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fontColor=#333333;fontStyle=0;fontSize=14;" vertex="1" parent="xhEjqI0Dl-hZpxnw0kOA-8">
+          <mxGeometry y="120" width="540" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="xhEjqI0Dl-hZpxnw0kOA-14" value="app.set(&#39;port&#39;, port); // set  key &#39;port&#39; to variable port. (3000 or environment port)" style="text;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fontStyle=0;fontSize=14;" vertex="1" parent="xhEjqI0Dl-hZpxnw0kOA-8">
+          <mxGeometry y="270" width="540" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="xhEjqI0Dl-hZpxnw0kOA-15" value="var server = http.createServer(app);  //pass the app.js file into createServer &#xa;                                                           //and initialize it as a server." style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fontStyle=0;fontSize=14;" vertex="1" parent="xhEjqI0Dl-hZpxnw0kOA-8">
+          <mxGeometry y="300" width="540" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="xhEjqI0Dl-hZpxnw0kOA-16" value="server.listen(port); //make the server listen to the port." style="text;strokeColor=#666666;fillColor=#f5f5f5;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fontColor=#333333;fontStyle=0;fontSize=14;" vertex="1" parent="xhEjqI0Dl-hZpxnw0kOA-8">
+          <mxGeometry y="350" width="540" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="xhEjqI0Dl-hZpxnw0kOA-17" value="server.on(&#39;error&#39;, onError); //on event &#39;error&#39; use callback function onError from line 56" style="text;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fontStyle=0;fontSize=14;" vertex="1" parent="xhEjqI0Dl-hZpxnw0kOA-8">
+          <mxGeometry y="380" width="540" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="xhEjqI0Dl-hZpxnw0kOA-18" value="server.on(&#39;listening&#39;, onListening); // on event &#39;listening&#39; use callback function &#xa;                                                      //onListening() from line 84" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fontStyle=0;fontSize=14;" vertex="1" parent="xhEjqI0Dl-hZpxnw0kOA-8">
+          <mxGeometry y="410" width="540" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="xhEjqI0Dl-hZpxnw0kOA-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fillColor=#e1d5e7;strokeColor=#9673a6;shape=flexArrow;fontStyle=0;fontSize=14;" edge="1" parent="1" source="xhEjqI0Dl-hZpxnw0kOA-9" target="xhEjqI0Dl-hZpxnw0kOA-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="530" y="60" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xhEjqI0Dl-hZpxnw0kOA-26" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#6BB509;fillColor=#d5e8d4;strokeColor=#82b366;shape=flexArrow;fontStyle=0;fontSize=14;" edge="1" parent="1" source="xhEjqI0Dl-hZpxnw0kOA-24" target="xhEjqI0Dl-hZpxnw0kOA-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xhEjqI0Dl-hZpxnw0kOA-24" value="App.js" style="swimlane;fontColor=#6BB509;fontStyle=0;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="2200" y="890" width="200" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="xhEjqI0Dl-hZpxnw0kOA-28" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#6BB509;shape=flexArrow;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=0;fontSize=14;" edge="1" parent="1" source="xhEjqI0Dl-hZpxnw0kOA-25" target="xhEjqI0Dl-hZpxnw0kOA-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xhEjqI0Dl-hZpxnw0kOA-25" value="Router" style="swimlane;fontColor=#6BB509;fontStyle=0;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="2200" y="630" width="200" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="xhEjqI0Dl-hZpxnw0kOA-30" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#6BB509;shape=flexArrow;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=0;fontSize=14;" edge="1" parent="1" source="xhEjqI0Dl-hZpxnw0kOA-27" target="xhEjqI0Dl-hZpxnw0kOA-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xhEjqI0Dl-hZpxnw0kOA-33" value="" style="edgeStyle=orthogonalEdgeStyle;shape=flexArrow;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#6BB509;fillColor=#e1d5e7;strokeColor=#9673a6;fontStyle=0;fontSize=14;" edge="1" parent="1" source="xhEjqI0Dl-hZpxnw0kOA-27" target="xhEjqI0Dl-hZpxnw0kOA-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xhEjqI0Dl-hZpxnw0kOA-27" value="Controller&#xa;" style="swimlane;fontColor=#6BB509;fontStyle=0;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="2480" y="630" width="200" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="xhEjqI0Dl-hZpxnw0kOA-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;fontColor=#6BB509;fillColor=#e1d5e7;strokeColor=none;shape=flexArrow;fontStyle=0;fontSize=14;" edge="1" parent="1" source="xhEjqI0Dl-hZpxnw0kOA-29" target="xhEjqI0Dl-hZpxnw0kOA-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xhEjqI0Dl-hZpxnw0kOA-29" value="Model" style="swimlane;fontColor=#6BB509;fontStyle=0;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="2480" y="350" width="200" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="xhEjqI0Dl-hZpxnw0kOA-41" style="edgeStyle=orthogonalEdgeStyle;shape=flexArrow;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontColor=#6BB509;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fillColor=#e1d5e7;strokeColor=#9673a6;fontStyle=0;fontSize=14;" edge="1" parent="1" source="xhEjqI0Dl-hZpxnw0kOA-32" target="xhEjqI0Dl-hZpxnw0kOA-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xhEjqI0Dl-hZpxnw0kOA-32" value="View&#xa;" style="swimlane;fontColor=#6BB509;fontStyle=0;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="2760" y="630" width="200" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="xhEjqI0Dl-hZpxnw0kOA-34" value="Templates" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#6BB509;fontStyle=0;fontSize=14;" vertex="1" parent="xhEjqI0Dl-hZpxnw0kOA-32">
+          <mxGeometry y="30" width="190" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="xhEjqI0Dl-hZpxnw0kOA-38" value="" style="shape=actor;whiteSpace=wrap;html=1;fontColor=#6BB509;fontStyle=0;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="2000" y="970" width="40" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="xhEjqI0Dl-hZpxnw0kOA-39" value="Get request" style="shape=singleArrow;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=0;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="2080" y="910" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="xhEjqI0Dl-hZpxnw0kOA-40" value="Response" style="shape=singleArrow;direction=west;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontStyle=0;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="2080" y="1020" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="xhEjqI0Dl-hZpxnw0kOA-55" value="https://expressjs.com/en/resources/middleware/morgan.html" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=0;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="1300" y="740" width="420" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="xhEjqI0Dl-hZpxnw0kOA-56" style="edgeStyle=orthogonalEdgeStyle;shape=flexArrow;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#6BB509;fillColor=#f5f5f5;strokeColor=#666666;fontStyle=0;fontSize=14;" edge="1" parent="1" source="xhEjqI0Dl-hZpxnw0kOA-52" target="xhEjqI0Dl-hZpxnw0kOA-55">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xhEjqI0Dl-hZpxnw0kOA-70" value="https://stackoverflow.com/questions/34174133/why-does-omitting-the-line-app-useexpress-static-dirname-public-stop-my" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=0;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="1290" y="890" width="420" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="xhEjqI0Dl-hZpxnw0kOA-71" style="edgeStyle=orthogonalEdgeStyle;shape=flexArrow;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontColor=#6BB509;fillColor=#f5f5f5;strokeColor=#666666;fontStyle=0;fontSize=14;" edge="1" parent="1" source="xhEjqI0Dl-hZpxnw0kOA-61" target="xhEjqI0Dl-hZpxnw0kOA-70">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xhEjqI0Dl-hZpxnw0kOA-72" value="http://expressjs.com/en/resources/middleware/method-override.html" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=0;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="1290" y="930" width="420" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="xhEjqI0Dl-hZpxnw0kOA-73" style="edgeStyle=orthogonalEdgeStyle;shape=flexArrow;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontColor=#6BB509;fillColor=#f5f5f5;strokeColor=#666666;fontStyle=0;fontSize=14;" edge="1" parent="1" source="xhEjqI0Dl-hZpxnw0kOA-63" target="xhEjqI0Dl-hZpxnw0kOA-72">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xhEjqI0Dl-hZpxnw0kOA-75" style="edgeStyle=orthogonalEdgeStyle;shape=flexArrow;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#6BB509;fillColor=#e1d5e7;strokeColor=#9673a6;fontStyle=0;fontSize=14;" edge="1" parent="1" source="xhEjqI0Dl-hZpxnw0kOA-64" target="xhEjqI0Dl-hZpxnw0kOA-76">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="260" y="985" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xhEjqI0Dl-hZpxnw0kOA-76" value="/routes/stuff.js" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#e1d5e7;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=#9673a6;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="-290" y="1340" width="700" height="156" as="geometry" />
+        </mxCell>
+        <mxCell id="xhEjqI0Dl-hZpxnw0kOA-77" value="var express = require(&#39;express&#39;);      // give access to express modules" style="text;strokeColor=#666666;fillColor=#f5f5f5;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#333333;fontStyle=0;fontSize=14;" vertex="1" parent="xhEjqI0Dl-hZpxnw0kOA-76">
+          <mxGeometry y="26" width="700" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="xhEjqI0Dl-hZpxnw0kOA-78" value="var router = express.Router();         //create a router object" style="text;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;fontSize=14;" vertex="1" parent="xhEjqI0Dl-hZpxnw0kOA-76">
+          <mxGeometry y="52" width="700" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="xhEjqI0Dl-hZpxnw0kOA-79" value="const stuffController = require(&#39;../controllers/stuff&#39;)     // import the controller" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;fontSize=14;" vertex="1" parent="xhEjqI0Dl-hZpxnw0kOA-76">
+          <mxGeometry y="78" width="700" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="xhEjqI0Dl-hZpxnw0kOA-81" value="router.get(&#39;/&#39;, stuffController.index);       //use get method from index and send it to the controller.index&#xa;" style="text;strokeColor=#666666;fillColor=#f5f5f5;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#333333;fontStyle=0;fontSize=14;" vertex="1" parent="xhEjqI0Dl-hZpxnw0kOA-76">
+          <mxGeometry y="104" width="700" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="xhEjqI0Dl-hZpxnw0kOA-82" value="module.exports = router;" style="text;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;fontSize=14;" vertex="1" parent="xhEjqI0Dl-hZpxnw0kOA-76">
+          <mxGeometry y="130" width="700" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="xhEjqI0Dl-hZpxnw0kOA-83" style="edgeStyle=orthogonalEdgeStyle;shape=flexArrow;rounded=0;jumpSize=12;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#6BB509;fillColor=#f5f5f5;strokeColor=#666666;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontStyle=0;fontSize=14;" edge="1" parent="1" source="xhEjqI0Dl-hZpxnw0kOA-78" target="xhEjqI0Dl-hZpxnw0kOA-84">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="430" y="1410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <UserObject label="https://www.geeksforgeeks.org/express-js-express-router-function/" link="https://www.geeksforgeeks.org/express-js-express-router-function/" id="xhEjqI0Dl-hZpxnw0kOA-84">
+          <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=0;fontSize=14;" vertex="1" parent="1">
+            <mxGeometry x="520" y="1320" width="420" height="30" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="xhEjqI0Dl-hZpxnw0kOA-86" style="edgeStyle=orthogonalEdgeStyle;rounded=0;jumpSize=12;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#6BB509;exitX=0;exitY=0.5;exitDx=0;exitDy=0;dashed=1;shape=flexArrow;fontStyle=0;fontSize=14;" edge="1" parent="1" source="xhEjqI0Dl-hZpxnw0kOA-82" target="xhEjqI0Dl-hZpxnw0kOA-23">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="370" y="1490" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="-350" y="1483" />
+              <mxPoint x="-350" y="635" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xhEjqI0Dl-hZpxnw0kOA-87" value="/controllers/stuff.js" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#e1d5e7;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=#9673a6;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="980" y="1496" width="470" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="xhEjqI0Dl-hZpxnw0kOA-88" value="const Stuff = require(&#39;../models/stuff&#39;);    //import the model" style="text;strokeColor=#666666;fillColor=#f5f5f5;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#333333;fontStyle=0;fontSize=14;" vertex="1" parent="xhEjqI0Dl-hZpxnw0kOA-87">
+          <mxGeometry y="26" width="470" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="xhEjqI0Dl-hZpxnw0kOA-89" value="module.exports = {       //export the functions in the controller&#xa;    index,&#xa;}" style="text;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;fontSize=14;" vertex="1" parent="xhEjqI0Dl-hZpxnw0kOA-87">
+          <mxGeometry y="52" width="470" height="68" as="geometry" />
+        </mxCell>
+        <mxCell id="xhEjqI0Dl-hZpxnw0kOA-90" value="function index(req, res) {                        // render the /skills/index.ejs view&#xa;    res.render(&#39;skills/index&#39;, {                   // take data from model function&#xa;        variableToPage : Stuff.getAll()       // Stuff.getAll() and send it to the&#xa;    });                                                       // variable variableToPage on the &#xa;}                                                             // index view" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;fontSize=14;" vertex="1" parent="xhEjqI0Dl-hZpxnw0kOA-87">
+          <mxGeometry y="120" width="470" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="xhEjqI0Dl-hZpxnw0kOA-91" style="edgeStyle=orthogonalEdgeStyle;shape=flexArrow;rounded=0;jumpSize=12;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontColor=#6BB509;fillColor=#e1d5e7;strokeColor=#9673a6;fontStyle=0;fontSize=14;" edge="1" parent="1" source="xhEjqI0Dl-hZpxnw0kOA-81" target="xhEjqI0Dl-hZpxnw0kOA-87">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xhEjqI0Dl-hZpxnw0kOA-92" style="edgeStyle=orthogonalEdgeStyle;shape=flexArrow;rounded=0;jumpSize=12;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#6BB509;dashed=1;fontStyle=0;fontSize=14;" edge="1" parent="1" source="xhEjqI0Dl-hZpxnw0kOA-89" target="xhEjqI0Dl-hZpxnw0kOA-79">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xhEjqI0Dl-hZpxnw0kOA-93" value="/models/stuff.js" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#e1d5e7;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=#9673a6;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="1700" y="1470" width="600" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="xhEjqI0Dl-hZpxnw0kOA-98" value="const stuffObj = [           // this is a very dumb model, in reality would be a database&#xa;    { name: &#39;pizza&#xa;    }&#xa;];" style="text;strokeColor=#666666;fillColor=#f5f5f5;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#333333;fontStyle=0;fontSize=14;" vertex="1" parent="xhEjqI0Dl-hZpxnw0kOA-93">
+          <mxGeometry y="26" width="600" height="74" as="geometry" />
+        </mxCell>
+        <mxCell id="xhEjqI0Dl-hZpxnw0kOA-94" value="module.exports = {         // export the model&#39;s functions&#xa;    getAll,&#xa;}" style="text;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;fontSize=14;" vertex="1" parent="xhEjqI0Dl-hZpxnw0kOA-93">
+          <mxGeometry y="100" width="600" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="xhEjqI0Dl-hZpxnw0kOA-95" value="function getAll() {            // this is function for handling model data&#xa;    return stuffObj;&#xa;}" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;fontSize=14;" vertex="1" parent="xhEjqI0Dl-hZpxnw0kOA-93">
+          <mxGeometry y="164" width="600" height="96" as="geometry" />
+        </mxCell>
+        <mxCell id="xhEjqI0Dl-hZpxnw0kOA-97" style="edgeStyle=orthogonalEdgeStyle;shape=flexArrow;rounded=0;jumpSize=12;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;dashed=1;fontColor=#6BB509;fontStyle=0;fontSize=14;" edge="1" parent="1" source="xhEjqI0Dl-hZpxnw0kOA-94" target="xhEjqI0Dl-hZpxnw0kOA-88">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1610" y="1628" />
+              <mxPoint x="1610" y="1535" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xhEjqI0Dl-hZpxnw0kOA-99" style="edgeStyle=orthogonalEdgeStyle;shape=flexArrow;rounded=0;jumpSize=12;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#6BB509;fillColor=#e1d5e7;strokeColor=#9673a6;entryX=-0.008;entryY=0.234;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1.009;exitY=0.222;exitDx=0;exitDy=0;exitPerimeter=0;fontStyle=0;fontSize=14;" edge="1" parent="1" source="xhEjqI0Dl-hZpxnw0kOA-90" target="xhEjqI0Dl-hZpxnw0kOA-95">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xhEjqI0Dl-hZpxnw0kOA-101" value="/views/stuff/index.ejs" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#e1d5e7;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=#9673a6;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="970" y="1870" width="430" height="310" as="geometry" />
+        </mxCell>
+        <mxCell id="xhEjqI0Dl-hZpxnw0kOA-102" value="&lt;!DOCTYPE html&gt;&#xa;&lt;html&gt;&#xa;  &lt;head&gt;&#xa;    &lt;title&gt;SKILLS&lt;/title&gt;&#xa;    &lt;link rel=&#39;stylesheet&#39; href=&#39;/stylesheets/style.css&#39; /&gt;&#xa;  &lt;/head&gt;&#xa;  &lt;body&gt;&#xa;        &lt;ul&gt;&#xa;        &lt;% for (thingy of variableToPage){ %&gt;&#xa;            &lt;li&gt; &lt;%= thingy.name %&gt; &lt;/li&gt;&#xa;        &lt;% } %&gt;&#xa;        &lt;/ul&gt;&#xa;&lt;/body&gt;&#xa;&lt;/html&gt;&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#6BB509;fontStyle=0;fontSize=14;" vertex="1" parent="xhEjqI0Dl-hZpxnw0kOA-101">
+          <mxGeometry y="26" width="430" height="284" as="geometry" />
+        </mxCell>
+        <mxCell id="xhEjqI0Dl-hZpxnw0kOA-110" style="edgeStyle=orthogonalEdgeStyle;shape=flexArrow;rounded=0;jumpSize=12;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;dashed=1;fontColor=#6BB509;fontStyle=0;fontSize=14;" edge="1" parent="1" source="xhEjqI0Dl-hZpxnw0kOA-105" target="xhEjqI0Dl-hZpxnw0kOA-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xhEjqI0Dl-hZpxnw0kOA-111" style="edgeStyle=orthogonalEdgeStyle;shape=flexArrow;rounded=0;jumpSize=12;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;dashed=1;fontColor=#6BB509;fontStyle=0;fontSize=14;" edge="1" parent="1" source="xhEjqI0Dl-hZpxnw0kOA-105" target="xhEjqI0Dl-hZpxnw0kOA-77">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xhEjqI0Dl-hZpxnw0kOA-105" value="node_modules" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#e1d5e7;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=#9673a6;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="1640" y="180" width="230" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="xhEjqI0Dl-hZpxnw0kOA-106" value="//many files, many modules" style="text;strokeColor=#36393d;fillColor=#eeeeee;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;fontSize=14;" vertex="1" parent="xhEjqI0Dl-hZpxnw0kOA-105">
+          <mxGeometry y="26" width="230" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="xhEjqI0Dl-hZpxnw0kOA-109" style="edgeStyle=orthogonalEdgeStyle;shape=flexArrow;rounded=0;jumpSize=12;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontColor=#6BB509;strokeColor=none;dashed=1;fontStyle=0;fontSize=14;" edge="1" parent="1" source="xhEjqI0Dl-hZpxnw0kOA-106" target="xhEjqI0Dl-hZpxnw0kOA-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xhEjqI0Dl-hZpxnw0kOA-112" style="edgeStyle=orthogonalEdgeStyle;shape=flexArrow;rounded=0;jumpSize=12;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontColor=#6BB509;fillColor=#ffe6cc;strokeColor=#d79b00;fontStyle=0;fontSize=14;" edge="1" parent="1" source="xhEjqI0Dl-hZpxnw0kOA-90" target="xhEjqI0Dl-hZpxnw0kOA-101">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xhEjqI0Dl-hZpxnw0kOA-114" style="edgeStyle=orthogonalEdgeStyle;shape=flexArrow;rounded=0;jumpSize=12;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#6BB509;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=0;fontSize=14;" edge="1" parent="1" source="xhEjqI0Dl-hZpxnw0kOA-102" target="xhEjqI0Dl-hZpxnw0kOA-115">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1600" y="2038" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xhEjqI0Dl-hZpxnw0kOA-115" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontColor=#6BB509;fontStyle=0;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="1580" y="1914" width="170" height="248" as="geometry" />
+        </mxCell>
+        <UserObject label="/package.json" link="https://www.geeksforgeeks.org/node-js-package-json/" id="xhEjqI0Dl-hZpxnw0kOA-117">
+          <mxCell style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#e1d5e7;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=#9673a6;fontSize=14;" vertex="1" parent="1">
+            <mxGeometry x="-580" y="40" width="405" height="154" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="xhEjqI0Dl-hZpxnw0kOA-119" value="https://docs.npmjs.com/cli/v8/configuring-npm/package-json" style="text;strokeColor=#666666;fillColor=#f5f5f5;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#333333;fontStyle=0;fontSize=14;" vertex="1" parent="xhEjqI0Dl-hZpxnw0kOA-117">
+          <mxGeometry y="26" width="405" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="xhEjqI0Dl-hZpxnw0kOA-123" value="https://www.geeksforgeeks.org/node-js-package-json/" style="text;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;fontSize=14;" vertex="1" parent="xhEjqI0Dl-hZpxnw0kOA-117">
+          <mxGeometry y="90" width="405" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="xhEjqI0Dl-hZpxnw0kOA-124" style="edgeStyle=orthogonalEdgeStyle;shape=flexArrow;rounded=0;jumpSize=12;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;fontColor=#6BB509;fillColor=#ffe6cc;strokeColor=#d79b00;" edge="1" parent="1" source="xhEjqI0Dl-hZpxnw0kOA-95" target="xhEjqI0Dl-hZpxnw0kOA-90">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1530" y="1708" />
+              <mxPoint x="1530" y="1671" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xhEjqI0Dl-hZpxnw0kOA-126" value="2022-03-31 V1.  Brian Baron" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fontSize=22;fontColor=#0B1201;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="1110" y="1290" width="350" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
